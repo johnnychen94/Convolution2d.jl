@@ -1,0 +1,6 @@
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+Convolution2D = "bb625b5d-1a65-427d-b1d3-7648dbea4522"
+ImageFiltering = "6a3955dd-da59-5b1f-98d4-e7296123deb5"
+ImageTransformations = "02fcd773-0e25-5acc-982a-7f6622650795"
+TestImages = "5e47fb64-e119-507b-a336-dd2b206d9990"
