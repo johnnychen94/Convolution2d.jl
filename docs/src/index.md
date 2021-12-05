@@ -1,3 +1,8 @@
+# Convolution2D Documentation
+
+## Examples
+
+```@example
 using Convolution2D
 using Images, TestImages
 
@@ -9,3 +14,10 @@ kern = [0 1 0
 X = float.(camera)
 conv2D(X, kern)
 imfilter(X, kern)
+```
+
+## Function references
+
+```@docs
+conv2D
+```
