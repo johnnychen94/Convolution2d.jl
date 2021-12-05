@@ -10,6 +10,42 @@ function zero_pad(X, sz)
 	out
 end
 
+"""
+    conv2D(X, kern)
+
+Apply 2D convolution kernel `kern` on array `X`.
+
+## Arguments
+
+- `X::AbstractArray`: must be odd size.
+- `kern::AbstractArray`: usually small array, must be odd size.
+
+## Examples
+
+```julia
+julia> X = rand(1:5, 5, 5)
+5×5 Matrix{Int64}:
+ 3  5  2  3  5
+ 1  3  2  1  4
+ 5  1  4  5  2
+ 2  4  3  4  1
+ 3  2  5  2  5
+
+julia> kern = [0 1 0; 1 -4 1; 0 1 0]
+3×3 Matrix{Int64}:
+ 0   1  0
+ 1  -4  1
+ 0   1  0
+
+julia> conv2D(X, kern)
+5×5 Matrix{Int64}:
+  -6  -12    2  -4  -13
+   7   -3    2  10   -8
+ -16   12   -5  -9    2
+   4   -8    5  -5    7
+  -8    4  -13   6  -17
+```
+"""
 function conv2D(X, K)
 	@assert all(isodd, size(K))
 
