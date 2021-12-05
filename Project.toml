@@ -3,4 +3,4 @@ uuid = "bb625b5d-1a65-427d-b1d3-7648dbea4522"
 version = "0.1.0"
 
 [compat]
-julia = "1"
+julia = "1.6"
